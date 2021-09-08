@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Red Hat Display', sans-serif;
+}
+.row {
+  display: flex;
+}
+.container {
+  width: 1366px;
+  height: 670px;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+.main {
+  width: inherit;
+  height: inherit;
+  background: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  background-color: #fff;
+  width: 400px;
+  height: 550px;
+  border-radius: 20px;
+  box-shadow: 0px 15px 25px -8px rgba(0, 0, 0, 0.37);
+}
+.card .head .hero {
+  width: 100%;
+}
+.card .head .hero img {
+  width: inherit;
+  border-radius: 20px 20px 0 0;
+}
+.card-body {
+  width: calc(100% - 100px);
+  margin: 0 auto;
+  border-radius: 20px;
+  height: calc(550px - 100px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.card-body-title {
+  font-size: 26px;
+  margin: 30px 0 20px 0;
+}
+.caption {
+  width: 100%;
+
+}
+.caption p{
+text-align: center;
+  font-size: 15px;
+  color: hsl(224, 23%, 55%);
+
+}
+.tag
+{
+    width: 300px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 98%);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+.inner-tag{
+  align-items: center;
+  justify-content: space-between;
+}
+.inner-tag .rate{
+  margin: 0 20px;
+}
+.rate span{
+  font-weight: 700;
+}
+.rate p{
+  color: hsl(224, 23%, 55%);
+
+}
+
+#change-btn{
+  cursor: pointer;
+  
+}
+#change-btn p{
+position: relative;  
+text-decoration: underline;
+color: hsl(223, 47%, 23%)
+}
+
+.payment-btn{
+  padding: 15px;
+  width: 300px;
+  cursor: pointer;
+  color: hsl(225, 100%, 98%);
+  text-align: center;
+  border-radius: 10px;
+  background-color: hsl(245, 75%, 52%);
+  box-shadow: 0px 15px 25px -8px rgba(0, 0, 0, 0.37);
+}
+
+.cancel-order{
+  color: hsl(224, 23%, 55%);
+  margin-top: 20px;
+}
+
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 595px) {
+  .main{
+    max-width: 340px;
+    height: 709px;
+    margin: 0;
+  }
+  .card{
+    width: 327px;
+  }
+}
+
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+}
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+}
